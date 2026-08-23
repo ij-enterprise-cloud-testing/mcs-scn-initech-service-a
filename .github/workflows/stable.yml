@@ -1,0 +1,11 @@
+name: mcs-stable-synthetic
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  stable:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic stable workflow"
+      - run: python --version
